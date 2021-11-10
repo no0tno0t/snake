@@ -2,9 +2,18 @@ import { update as updateSnake, draw as drawSnake, SNAKE_SPEED } from "./snake.j
 import { update as updateFood, draw as drawFood } from "./food.js"
 
 let lastRenderTime = 0
+let gameOver = false
 const gameBoard = document.getElementById("snake-board")
 
 function main(currentTime) {
+    if (gameOver) {
+        if (confirm('You lost. Press ok to restart.')) {
+          window.location.reload()
+        }
+        return
+      }
+
+      
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
@@ -23,6 +32,7 @@ window.requestAnimationFrame(main)
 function update() {
     updateFood()
     updateSnake()
+    checkDeath()
 }
 
 function draw() {
@@ -30,3 +40,7 @@ function draw() {
     drawSnake(gameBoard)
     drawFood(gameBoard)
 }
+
+function checkDeath() {
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+  }
