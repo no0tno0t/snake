@@ -53,6 +53,7 @@ body {
 }
 
 .buttonsize {
+    padding: 0;
     min-width: 50px;
     min-height: 50px;
     box-shadow: 1px 1px 1px  hsl(200, 100%, 50%);
