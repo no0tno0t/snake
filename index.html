@@ -7,8 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <section>settings</section>
+
+
+
+    <section>
+        <!--Navigation Buttons to open Modals-->
+        <button class="settingsbutton" id="settingsid" aria-label="Adjust Background Color"> <!-- Aria-label: It's an attribute designed to help assistive technology (e.g. screen readers) attach a label to an otherwise anonymous HTML element. -->
+            Settings 
+        </button>
+        <!--Modal for settings-->
+        <div id="settings-table">
+            <div>
+                <span class="exit" id="settings-exit"></span>
+                <div>
+                    <h2>Settings</h2>
+                </div>
+                <form method="POST" id="form">
+                    
+                    <div>
+                        <label for="Bg">Change Background:</label>
+                        <input type="color" id="Bg" name="Bg" value="#f5f5f5"><br>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit">
+                            Submit
+                        </button>
+                        <button type="reset" class="reset">
+                            Default
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+
     <section>snakearena</section>
     <section>directional pad</section>
+
+
+
+    <script src="assets/js/setting.js"></script>
 </body>
 </html>
