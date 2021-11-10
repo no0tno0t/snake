@@ -55,7 +55,7 @@ body {
 .buttonsize {
     min-width: 50px;
     min-height: 50px;
-    box-shadow: 1px 1px 1px #000000;
+    box-shadow: 1px 1px 1px  hsl(200, 100%, 50%);
 }
 
 .box1 {
@@ -67,7 +67,7 @@ body {
 }
 
 .settingsbutton:hover {
-    box-shadow: 1px 1px 1px #000000;
+    box-shadow: 1px 1px 1px hsl(200, 100%, 50%);
 
 }
 /* Modal */
@@ -107,7 +107,7 @@ body {
 }
 
 .exit:hover {
-    background-color: #8B0000;
+    background-color: hsl(50, 100%, 50%);
     cursor: pointer;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .submit:hover {
-    background-color: #2c2a2a;
+    background-color:  hsl(200, 100%, 50%);
 }
 
 .reset {
@@ -138,7 +138,7 @@ body {
 }
 
 .reset:hover {
-    background-color: #e4e3e3;
+    background-color: hsl(50, 100%, 50%);
 }
 
 
