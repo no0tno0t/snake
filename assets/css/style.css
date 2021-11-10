@@ -20,7 +20,7 @@ body {
 .game-arena {
     display: flex;
     justify-content: center;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
 }
 
 .container {
@@ -64,21 +64,12 @@ body {
 
 .settingsbutton {
     width: 100%;
-    /* padding: 5px;
-    border: 3px solid #000;
-    border-radius: 10px;
-    box-sizing: border-box;
-    background-color: #c0c0c0;
-    font-size: 1.2rem;
-    font-weight: 700; */
 }
 
 .settingsbutton:hover {
     box-shadow: 1px 1px 1px #000000;
-    /* background-color: #2c2a2a;
-    color: #f5f5f5; */
-}
 
+}
 /* Modal */
 .modal {
     display: none;
@@ -124,14 +115,13 @@ body {
 
 
 .submit {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 5px;
+    width: 20%;
+    font-size: 1.2rem;
+    padding: 1px;
     margin-bottom: 1rem;
-    background-color: 	#8B0000;
-    border: 5px solid #000;
+    background-color: 	#c0c0c0;
+    border: 2px solid #000;
     border-radius: 10px;
-    color: #FFFF00;
 }
 
 .submit:hover {
@@ -139,11 +129,11 @@ body {
 }
 
 .reset {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 5px;
+    width: 20%;
+    font-size: 1.2rem;
+    padding: 1px;
     background-color: #c0c0c0;
-    border: 5px solid #000;
+    border: 2px solid #000;
     border-radius: 10px;
 }
 
