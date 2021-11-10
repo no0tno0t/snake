@@ -2,7 +2,7 @@
 
 A Snake game for the easy fun of not dying while eating and you can change the background color of the page! 
 
-Play the game: 
+Play the game: https://no0tno0t.github.io/snake/
 
 ![Am I Responsive?](documents/readme/Snake.png) 
 
@@ -114,9 +114,9 @@ The dpad does sometimes get distorted. It should be a fixed Bug but it would be 
 ### Libraries
 
  ## **Deployment**
-I deployed the website on GitHub pages via the following:
+I deployed the website on GitHub pages:
 
-You can play the game here: 
+You can play the game here: https://no0tno0t.github.io/snake/
 
 ## **Credits**
 
