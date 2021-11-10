@@ -21,6 +21,7 @@ function main(currentTime) {
 window.requestAnimationFrame(main)
 
 function update() {
+    updateFood()
     updateSnake()
 }
 
