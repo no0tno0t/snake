@@ -142,7 +142,32 @@ body {
 }
 
 
-
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .container {
+        background-color: hsl(200, 100%, 50%);
+    }
+    .submit {
+        font-size: .9rem;
+    }
+    .reset {
+        font-size: .9rem;
+    }
+    }
+    
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+    .container {
+        background-color: olive;
+        font-size: .6rem;
+    }
+    .submit {
+        font-size: .8rem;
+    }
+    .reset {
+        font-size: .8rem;
+    }
+    }
 
 
 
