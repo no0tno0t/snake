@@ -1,12 +1,14 @@
 import { onSnake, expandSnake } from './snake.js'
 
-let food = { x: 10, y: 5}
+
+
+let food = RandomFood()
 const EXPANSION_RATE = 1
 
 export function update() {
     if (onSnake(food)) {
       expandSnake(EXPANSION_RATE)
-      food = { x: 5, y: 10 }
+      food = RandomFood()
     }
   }
   
@@ -17,3 +19,13 @@ export function update() {
     foodElement.classList.add("food")
     gameBoard.appendChild(foodElement)
 }
+
+
+
+function RandomFood() {
+    let newFood
+    while (newFood == null || onSnake(newFood)) {
+      newFood = randomGridPosition()
+    }
+    return newFood
+  }
