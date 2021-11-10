@@ -10,7 +10,18 @@ function main(currentTime) {
     console.log('Render')
     lastRenderTime = currentTime
 
-}
-  
 
+    update() // update loop all the logic for the game, ex.: move the snake, 
+    draw()   // draw the food, draw the snake at the screen etc
+
+}
+   
 window.requestAnimationFrame(main)
+
+function update() {
+
+}
+
+function draw() {
+    
+}
